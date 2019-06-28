@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2ac3d721-1545-4ea8-aa04-70c8096be1b2" name="Default Changelist" comment="" />
+    <list default="true" id="2ac3d721-1545-4ea8-aa04-70c8096be1b2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/view/addNewTask/window.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/addNewTask/windowModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/dashboard/dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/floatingButtons/Panel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/floatingButtons/PanelController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/inProcessTask/Panel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/newTask/Panel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/taskCard/Panel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Application.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/Application.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/main/List.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/main/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/main/Main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/main/Main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap.json" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap.jsonp" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap.jsonp" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -14,34 +30,159 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Application.js">
+        <entry file="file://$PROJECT_DIR$/app/view/floatingButtons/Panel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+            <state relative-caret-position="320">
+              <caret line="16" column="33" selection-end-line="28" />
               <folding>
-                <element signature="e#0#205#0" expanded="true" />
-                <element signature="e#239#695#0" expanded="true" />
-                <element signature="e#340#404#0" expanded="true" />
-                <element signature="e#359#398#0" expanded="true" />
+                <element signature="e#0#78#0" expanded="true" />
+                <element signature="e#205#223#0" expanded="true" />
+                <element signature="e#296#359#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bootstrap.js">
+        <entry file="file://$PROJECT_DIR$/app/view/addNewTask/window.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="2577" column="7" selection-start-line="2577" selection-start-column="7" selection-end-line="2577" selection-end-column="7" />
+            <state relative-caret-position="1503">
+              <caret line="157" column="18" selection-start-line="157" selection-start-column="18" selection-end-line="157" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#78#0" expanded="true" />
+                <element signature="e#257#285#0" expanded="true" />
+                <element signature="e#344#360#0" expanded="true" />
+                <element signature="e#362#398#0" expanded="true" />
+                <element signature="e#469#986#0" expanded="true" />
+                <element signature="e#535#579#0" expanded="true" />
+                <element signature="e#574#923#0" expanded="true" />
+                <element signature="e#575#758#0" expanded="true" />
+                <element signature="e#760#957#0" expanded="true" />
+                <element signature="e#940#1578#0" expanded="true" />
+                <element signature="e#1032#1076#0" expanded="true" />
+                <element signature="e#1128#1572#0" expanded="true" />
+                <element signature="e#1072#1343#0" expanded="true" />
+                <element signature="e#1344#1539#0" expanded="true" />
+                <element signature="e#1463#1571#0" expanded="true" />
+                <element signature="e#1777#2797#0" expanded="true" />
+                <element signature="e#1784#1828#0" expanded="true" />
+                <element signature="e#1934#2791#0" expanded="true" />
+                <element signature="e#1883#2134#0" expanded="true" />
+                <element signature="e#2144#2488#0" expanded="true" />
+                <element signature="e#2186#2243#0" expanded="true" />
+                <element signature="e#2483#2790#0" expanded="true" />
+                <element signature="e#2629#2681#0" expanded="true" />
+                <element signature="e#2547#3512#0" expanded="true" />
+                <element signature="e#2591#2718#0" expanded="true" />
+                <element signature="e#2735#3506#0" expanded="true" />
+                <element signature="e#2736#3008#0" expanded="true" />
+                <element signature="e#2849#2899#0" expanded="true" />
+                <element signature="e#3009#3189#0" expanded="true" />
+                <element signature="e#3184#3276#0" expanded="true" />
+                <element signature="e#3307#3451#0" expanded="true" />
+                <element signature="e#3572#3641#0" expanded="true" />
+                <element signature="e#3750#3810#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/view/taskCard/Panel.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="387">
+              <caret line="29" column="46" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
+              <folding>
+                <element signature="e#0#78#0" expanded="true" />
+                <element signature="e#317#339#0" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="e#845#966#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bootstrap.css">
+        <entry file="file://$PROJECT_DIR$/app/view/addNewTask/windowModel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+            <state relative-caret-position="880">
+              <caret line="47" column="63" lean-forward="true" selection-start-line="47" selection-start-column="63" selection-end-line="47" selection-end-column="63" />
+              <folding>
+                <element signature="e#0#77#0" expanded="true" />
+                <element signature="e#195#696#0" expanded="true" />
+                <element signature="e#750#772#0" expanded="true" />
+                <element signature="e#803#1102#0" expanded="true" />
+                <element signature="e#1131#1360#0" expanded="true" />
+                <element signature="e#1190#1350#0" expanded="true" />
+                <element signature="e#1381#1610#0" expanded="true" />
+                <element signature="e#1440#1600#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/view/main/MainModel.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="15" selection-end-column="3" />
+              <folding>
+                <element signature="e#0#77#0" expanded="true" />
+                <element signature="e#119#767#0" expanded="true" />
+                <element signature="e#195#696#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/view/main/Main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#330#0" expanded="true" />
+                <element signature="e#462#614#0" expanded="true" />
+                <element signature="e#700#754#0" expanded="true" />
+                <element signature="e#772#1040#0" expanded="true" />
+                <element signature="e#782#849#0" expanded="true" />
+                <element signature="e#851#924#0" expanded="true" />
+                <element signature="e#926#989#0" expanded="true" />
+                <element signature="e#991#1039#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/view/floatingButtons/PanelController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#141#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/view/main/MainController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="17" column="39" selection-end-line="19" />
+              <folding>
+                <element signature="e#0#141#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Application.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1440">
+              <caret line="75" column="36" selection-start-line="75" selection-start-column="36" selection-end-line="75" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -49,50 +190,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/main/Main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1140">
-              <caret line="57" column="44" lean-forward="true" selection-start-line="57" selection-start-column="33" selection-end-line="57" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="920">
-              <caret line="91" column="24" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#127#464#0" expanded="true" />
-                <element signature="e#199#375#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Readme.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Application.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+            <state relative-caret-position="840">
+              <caret line="54" column="37" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -106,16 +205,37 @@
       <find>base-colo</find>
       <find>base-color..</find>
       <find>base-color</find>
+      <find>mainlist</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\plus\Documents\FE\BecasProject</dir>
     </dirStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/app/view/inProcessTask/Panel.js" />
+        <option value="$PROJECT_DIR$/app/view/newTask/Panel.js" />
+        <option value="$PROJECT_DIR$/app/view/dashboard/dashboard.js" />
+        <option value="$PROJECT_DIR$/app/view/main/Main.js" />
+        <option value="$PROJECT_DIR$/app/view/floatingButtons/Panel.js" />
+        <option value="$PROJECT_DIR$/app/view/floatingButtons/PanelController.js" />
         <option value="$PROJECT_DIR$/app/view/main/Main.scss" />
+        <option value="$PROJECT_DIR$/app/view/addNewTask/window.scss" />
+        <option value="$PROJECT_DIR$/app/view/addNewTask/window.js" />
+        <option value="$PROJECT_DIR$/app/view/addNewTask/windowModel.js" />
         <option value="$PROJECT_DIR$/app/Application.scss" />
+        <option value="$PROJECT_DIR$/app/view/taskCard/Panel.js" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
       </list>
     </option>
   </component>
@@ -125,6 +245,7 @@
     <option name="width" value="1036" />
     <option name="height" value="773" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -153,7 +274,28 @@
               <item name="BecasProject" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="addNewTask" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BecasProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BecasProject" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="floatingButtons" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BecasProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BecasProject" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BecasProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BecasProject" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="taskCard" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -167,6 +309,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\plus\Documents\FE\BecasProject\app\view" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -190,18 +337,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561739518236</updated>
-      <workItem from="1561739519432" duration="1401000" />
+      <workItem from="1561739519432" duration="11605000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1401000" />
+    <option name="totallyTimeSpent" value="11605000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1096" height="1896" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2863894" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2863894" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Gulp" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -400,7 +547,14 @@
     <entry file="file://$PROJECT_DIR$/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="920">
+          <caret line="91" column="24" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -417,24 +571,198 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.json">
+    <entry file="file://$PROJECT_DIR$/app/view/main/List.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="920">
-          <caret line="91" column="24" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="24" />
+        <state relative-caret-position="100">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+            <element signature="e#157#197#0" expanded="true" />
+            <element signature="e#236#269#0" expanded="true" />
+            <element signature="e#285#449#0" expanded="true" />
+            <element signature="e#467#507#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/dashboard/dashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#81#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/inProcessTask/Panel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#75#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/newTask/Panel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="21" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#367#782#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/floatingButtons/PanelController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#141#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/main/MainModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="15" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#77#0" expanded="true" />
+            <element signature="e#119#767#0" expanded="true" />
+            <element signature="e#195#696#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/main/Main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#330#0" expanded="true" />
+            <element signature="e#462#614#0" expanded="true" />
+            <element signature="e#700#754#0" expanded="true" />
+            <element signature="e#772#1040#0" expanded="true" />
+            <element signature="e#782#849#0" expanded="true" />
+            <element signature="e#851#924#0" expanded="true" />
+            <element signature="e#926#989#0" expanded="true" />
+            <element signature="e#991#1039#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/addNewTask/window.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/floatingButtons/Panel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="16" column="33" selection-end-line="28" />
+          <folding>
+            <element signature="e#0#78#0" expanded="true" />
+            <element signature="e#205#223#0" expanded="true" />
+            <element signature="e#296#359#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/main/Main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="57" column="44" lean-forward="true" selection-start-line="57" selection-start-column="33" selection-end-line="57" selection-end-column="44" />
+        <state relative-caret-position="840">
+          <caret line="54" column="37" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/main/MainController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="39" selection-end-line="19" />
+          <folding>
+            <element signature="e#0#141#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/addNewTask/window.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1503">
+          <caret line="157" column="18" selection-start-line="157" selection-start-column="18" selection-end-line="157" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#78#0" expanded="true" />
+            <element signature="e#257#285#0" expanded="true" />
+            <element signature="e#344#360#0" expanded="true" />
+            <element signature="e#362#398#0" expanded="true" />
+            <element signature="e#469#986#0" expanded="true" />
+            <element signature="e#535#579#0" expanded="true" />
+            <element signature="e#574#923#0" expanded="true" />
+            <element signature="e#575#758#0" expanded="true" />
+            <element signature="e#760#957#0" expanded="true" />
+            <element signature="e#940#1578#0" expanded="true" />
+            <element signature="e#1032#1076#0" expanded="true" />
+            <element signature="e#1128#1572#0" expanded="true" />
+            <element signature="e#1072#1343#0" expanded="true" />
+            <element signature="e#1344#1539#0" expanded="true" />
+            <element signature="e#1463#1571#0" expanded="true" />
+            <element signature="e#1777#2797#0" expanded="true" />
+            <element signature="e#1784#1828#0" expanded="true" />
+            <element signature="e#1934#2791#0" expanded="true" />
+            <element signature="e#1883#2134#0" expanded="true" />
+            <element signature="e#2144#2488#0" expanded="true" />
+            <element signature="e#2186#2243#0" expanded="true" />
+            <element signature="e#2483#2790#0" expanded="true" />
+            <element signature="e#2629#2681#0" expanded="true" />
+            <element signature="e#2547#3512#0" expanded="true" />
+            <element signature="e#2591#2718#0" expanded="true" />
+            <element signature="e#2735#3506#0" expanded="true" />
+            <element signature="e#2736#3008#0" expanded="true" />
+            <element signature="e#2849#2899#0" expanded="true" />
+            <element signature="e#3009#3189#0" expanded="true" />
+            <element signature="e#3184#3276#0" expanded="true" />
+            <element signature="e#3307#3451#0" expanded="true" />
+            <element signature="e#3572#3641#0" expanded="true" />
+            <element signature="e#3750#3810#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/addNewTask/windowModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="880">
+          <caret line="47" column="63" lean-forward="true" selection-start-line="47" selection-start-column="63" selection-end-line="47" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#77#0" expanded="true" />
+            <element signature="e#195#696#0" expanded="true" />
+            <element signature="e#750#772#0" expanded="true" />
+            <element signature="e#803#1102#0" expanded="true" />
+            <element signature="e#1131#1360#0" expanded="true" />
+            <element signature="e#1190#1350#0" expanded="true" />
+            <element signature="e#1381#1610#0" expanded="true" />
+            <element signature="e#1440#1600#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Application.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+        <state relative-caret-position="1440">
+          <caret line="75" column="36" selection-start-line="75" selection-start-column="36" selection-end-line="75" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/taskCard/Panel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="29" column="46" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#78#0" expanded="true" />
+            <element signature="e#317#339#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#845#966#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

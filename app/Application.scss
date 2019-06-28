@@ -4,3 +4,84 @@
  */
 $enable-font-awesome: dynamic(true);
 $base-color: #90A4AE;
+$taskHoldercolor: #90A4AE;
+
+.taskHolder {
+  opacity: 0.2;
+  background-color: $taskHoldercolor;
+  margin: 10px;
+}
+
+.fab-create {
+  width: 70px;
+  height: 70px;
+  background-color: $base-color;
+  border-radius: 50%;
+  box-shadow: 0 6px 10px 0 #666;
+
+  font-size: 20px;
+  line-height: 70px;
+  color: white;
+  text-align: center;
+
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+
+  transition: all 0.1s ease-in-out;
+}
+
+.fab-create:hover {
+  box-shadow: 0 6px 14px 0 #666;
+  transform: scale(1.05);
+}
+
+.fab-export {
+  width: 70px;
+  height: 70px;
+  background-color: $base-color;
+  border-radius: 50%;
+  box-shadow: 0 6px 10px 0 #666;
+
+  font-size: 20px;
+  line-height: 70px;
+  color: white;
+  text-align: center;
+
+  position: fixed;
+  right: 50px;
+  bottom: 135px;
+
+  transition: all 0.1s ease-in-out;
+}
+
+.fab-export:hover {
+  box-shadow: 0 6px 14px 0 #666;
+  transform: scale(1.05);
+}
+
+.defaultButton {
+  background-color: $base-color;
+}
+
+.taskCard {
+  border-color: #707070;
+  opacity: 0.6;
+  border: solid;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+/**
+ * cls for the text that is inside the cards
+ */
+.cardText{
+  width: 100%;
+  font-size: 30px;
+  color: #848484;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  padding: 10px;
+  text-align: center;
+}
