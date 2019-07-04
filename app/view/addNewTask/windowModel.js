@@ -7,53 +7,63 @@ Ext.define('Tasker.view.addNewTask.windowModel', {
     alias: 'viewmodel.windowModel',
 
     data: {
-        name: 'Tasker',
-
-        loremIpsum: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+        name: 'Tasker'
     },
 
     stores: {
        categoryStore: {
            fields: ['id','show'],
            data: [
-               {id: 0, show: 'Battlestar Galactica'},
-               {id: 1, show: 'Doctor Who'},
-               {id: 2, show: 'Farscape'},
-               {id: 3, show: 'Firefly'},
-               {id: 4, show: 'Star Trek'},
-               {id: 5, show: 'Star Wars: Christmas Special'}
+               {id: 0, show: 'Planning'},
+               {id: 1, show: 'Design'},
+               {id: 2, show: 'Development'},
+               {id: 3, show: 'Testing'},
+               {id: 4, show: 'Post-Mortem'},
+               {id: 5, show: 'Daily Scrum'},
+               {id: 6, show: 'Sprint Review'}
            ]
        },
         priority: {
-            fields: ['abbr', 'name'],
+            storeId: 'priorityStore',
+            fields: ['severity', 'name'],
             data : [
-                {"abbr":"AL", "name":"Alabama"},
-                {"abbr":"AK", "name":"Alaska"},
-                {"abbr":"AZ", "name":"Arizona"}
+                {"severity":"1", "name":"1 - Blocker"},
+                {"severity":"2", "name":"2 - Critical"},
+                {"severity":"3", "name":"3 - Major"},
+                {"severity":"4", "name":"4 - Minor"},
+                {"severity":"5", "name":"5 - Trivial"},
             ]
         },
         project: {
-            fields: ['abbr', 'name'],
+            fields: ['id', 'name'],
             data : [
-                {"abbr":"AL", "name":"Alabama"},
-                {"abbr":"AK", "name":"Alaska"},
-                {"abbr":"AZ", "name":"Arizona"}
+                {"id":0, "name":"Personal Project"},
+                {"id":1, "name":"Monitor 5"},
+                {"id":2, "name":"RMI"},
+                {"id":3, "name":"GCI"},
+                {"id":4, "name":"Data Mining"},
+                {"id":5, "name":"Certification"}
             ]
         },
         taskCards: {
             storeId: 'taskCards',
-            fields: ['color', 'title', 'duration', 'rating', 'storyPoints', 'initDate', 'endDate', 'width', 'height'],
+            fields: ['idTask', 'color', 'title', 'duration', 'rating', 'storyPoints', 'initDate', 'endDate', 'width', 'height'],
             data: [
                 {
+                    idTask: 'prevTask',
                     color: '#3B939A',
                     title: 'Preview Card',
                     duration: '0',
-                    rating: '3',
+                    rating: '0',
                     storyPoints: '0',
                     initDate: '00/00/0000',
                     endDate: '00/00/0000',
                     width: '500px',
-                    height: '200px'
+                    height: '200px',
+                    background: '',
+                    cardClass: 'infoCards',
+                    dateLineHeight: '80px',
+                    dateFontSize: '23px'
                 }
             ]
         }

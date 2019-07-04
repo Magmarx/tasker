@@ -4,10 +4,9 @@
  */
 $enable-font-awesome: dynamic(true);
 $base-color: #90A4AE;
-$taskHoldercolor: #90A4AE;
+$taskHoldercolor: #E9EDEF;
 
 .taskHolder {
-  opacity: 0.2;
   background-color: $taskHoldercolor;
   margin: 10px;
 }
@@ -70,6 +69,7 @@ $taskHoldercolor: #90A4AE;
   border: solid;
   border-radius: 25px;
   padding: 10px;
+  text-align: center;
 }
 
 /**
@@ -77,11 +77,47 @@ $taskHoldercolor: #90A4AE;
  */
 .cardText{
   width: 100%;
-  font-size: 30px;
+  font-size: 25px;
   color: #848484;
   display: inline-block;
   vertical-align: middle;
   line-height: normal;
   padding: 10px;
   text-align: center;
+}
+
+.taskCard > div > .infoCards {
+  height: 40px;
+  border-radius: 25px;
+  width: 135px;
+  display: inline-block;
+  margin: 0px 10px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+}
+
+.taskCard > div > .infoCards-small {
+   display: inline-block;
+   height: 30px;
+   border-radius: 25px;
+   width: 30%;
+   margin: 0px 4px;
+   text-align: center;
+   line-height: 30px;
+   font-size: 12px;
+ }
+
+.taskCard > div > .infoCards-floating {
+  position: relative;
+  top: 40px;
+  right: 270px;
+  display: inline-block;
+  height: 30px;
+  border-radius: 25px;
+  width: 80px;
+  margin: 0px 4px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 12px;
 }

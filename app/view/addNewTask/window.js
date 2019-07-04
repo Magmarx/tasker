@@ -16,6 +16,7 @@ Ext.define('Tasker.view.addNewTask.window', {
     },
 
     viewModel: 'windowModel',
+    controller: 'windowController',
 
     modal: true,
     defaults: {
@@ -25,27 +26,41 @@ Ext.define('Tasker.view.addNewTask.window', {
         },
         padding: 15
     },
+
+    config: {
+        parentView: null,
+        actionMode: 'create',
+        recordData: null
+    },
     
     items: [{
-        xtype: 'panel',
+        xtype: 'form',
+        reference: 'firstForm',
         defaults: {
             padding: '0 15 0 15',
             allowBlank: false,
             flex: 1,
-            labelAlign: 'top'
+            labelAlign: 'top',
+            enforceMaxLength: true
         },
         items: [{
             xtype: 'textfield',
             fieldLabel: 'Name',
-            name: 'name'
+            maxLength: 20,
+            name: 'name',
+            listeners: {
+                change: 'updateValues'
+            }
         }, {
             xtype: 'textfield',
             fieldLabel: 'Description',
+            maxLength: 250,
             name: 'description',
             flex: 2
         }]
     }, {
-        xtype: 'panel',
+        xtype: 'form',
+        reference: 'secondForm',
         defaults: {
             padding: '0 15 0 15',
             allowBlank: false,
@@ -59,18 +74,38 @@ Ext.define('Tasker.view.addNewTask.window', {
             value: 3,
             increment: 1,
             minValue: 0,
-            maxValue: 5
+            maxValue: 5,
+            listeners: {
+                change: 'updateValues'
+            }
         },{
             xtype: 'datefield',
             fieldLabel: 'Initial Date',
-            name: 'initDate'
+            name: 'initDate',
+            reference: 'initDate',
+            publishes: 'value',
+            bind: {
+                maxValue: '{endDate.value}'
+            },
+            listeners: {
+                change: 'updateValues'
+            }
         }, {
             xtype: 'datefield',
             fieldLabel: 'End Date',
-            name: 'endDate'
+            name: 'endDate',
+            reference: 'endDate',
+            publishes: 'value',
+            bind: {
+                minValue: '{initDate.value}'
+            },
+            listeners: {
+                change: 'updateValues'
+            }
         }]
     }, {
-        xtype: 'panel',
+        xtype: 'form',
+        reference: 'thirdForm',
         defaults: {
             padding: '0 15 0 15',
             allowBlank: false,
@@ -82,7 +117,10 @@ Ext.define('Tasker.view.addNewTask.window', {
             name: 'duration',
             fieldLabel: 'Duration (by hours)',
             minValue: '0',
-            maxValue: '120'
+            maxValue: '120',
+            listeners: {
+                change: 'updateValues'
+            }
         }, {
             xtype: 'tagfield',
             bind: {
@@ -103,10 +141,11 @@ Ext.define('Tasker.view.addNewTask.window', {
             },
             queryMode: 'local',
             displayField: 'name',
-            valueField: 'abbr'
+            valueField: 'severity'
         }]
     }, {
-        xtype: 'panel',
+        xtype: 'form',
+        reference: 'fourthForm',
         defaults: {
             padding: '0 15 0 15',
             allowBlank: false,
@@ -121,7 +160,8 @@ Ext.define('Tasker.view.addNewTask.window', {
             },
             queryMode: 'local',
             displayField: 'name',
-            valueField: 'abbr',
+            valueField: 'id',
+            valueField: 'id',
             flex: 1
         }, {
             xtype: 'numberfield',
@@ -129,23 +169,28 @@ Ext.define('Tasker.view.addNewTask.window', {
             fieldLabel: 'Story Points',
             minValue: '0',
             maxValue: '100',
-            flex: 1
+            flex: 1,
+            listeners: {
+                change: 'updateValues'
+            }
         }, {
-            xtype: 'button',
+            xtype: 'textfield',
+            fieldLabel: 'Color',
             name: 'color',
-            reference: 'color',
-            text: 'Color',
-            height: 30,
-            width: 150
+            listeners: {
+                change: 'updateValues'
+            }
         }, {
             xtype: 'checkboxfield',
             boxLabel  : 'New',
             name      : 'new',
             inputValue: '1',
+            value: 1
         }]
     }, {
         xtype: 'panel',
         title: 'Preview',
+        reference: 'previewPanel',
         layout: {
             type: 'vbox',
             align: 'center'
@@ -159,5 +204,23 @@ Ext.define('Tasker.view.addNewTask.window', {
                 margin: 10
             }
         ]
-    }]
+    }],
+    buttons: [
+        {
+            text: 'Accept',
+            name: 'accept',
+            scale: 'medium',
+            handler: 'onAccept'
+        },
+        {
+            text: 'Cancel',
+            name: 'cancel',
+            scale: 'medium',
+            handler: 'onCancel'
+        }
+    ],
+
+    listeners: {
+        boxready: 'setData'
+    }
 });

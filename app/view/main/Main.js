@@ -32,13 +32,13 @@ Ext.define('Tasker.view.main.Main', {
     items: [
         {
             xtype: 'newTaskPanel',
-            flex: 1,
+            width: 300
         }, {
             xtype: 'inProcessTaskPanel',
-            flex: 1,
+            width: 300
         }, {
             xtype: 'dashboard',
-            flex: 4
+            flex: 1
         }, {
             xtype: 'floatingButtons'
         }]

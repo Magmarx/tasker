@@ -8,8 +8,12 @@ Ext.define('Tasker.view.floatingButtons.PanelController', {
     alias: 'controller.floatingButtonController',
 
     createAddTaskWindow: function () {
-        console.log("click");
-        let window = Ext.create('Tasker.view.addNewTask.window');
+        let _this = this,
+            view = _this.getView(),
+            mainTasker = view.up('mainTasker');
+        let window = Ext.create('Tasker.view.addNewTask.window', {
+            parentView: mainTasker
+        });
         window.show();
     },
 
