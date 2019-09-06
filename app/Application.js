@@ -24,4 +24,5 @@ Ext.define('Tasker.Application', {
             }
         );
     }
+    
 });
