@@ -39,15 +39,6 @@ Ext.define('Tasker.view.taskCard.Panel', {
         '</tpl>',
         '</div>'
     ),
-    // color: '#3B939A',
-    // title: 'Preview Card',
-    // duration: '0',
-    // rating: '3',
-    // storyPoints: '0',
-    // initDate: '00/00/0000',
-    // endDate: '00/00/0000',
-    // width: '500px',
-    // height: '200px'
 
     listeners: {
         // itemclick: 'onItemclick'

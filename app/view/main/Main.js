@@ -37,7 +37,7 @@ Ext.define('Tasker.view.main.Main', {
             xtype: 'inProcessTaskPanel',
             width: 300
         }, {
-            xtype: 'dashboard',
+            xtype: 'widgets',
             flex: 1
         }, {
             xtype: 'floatingButtons'

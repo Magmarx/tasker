@@ -8,7 +8,7 @@ Ext.define('Tasker.view.addNewTask.windowController', {
 
     alias: 'controller.windowController',
 
-    setData: function() {
+    setData: function () {
         let _this = this,
             view = _this.getView(),
             data = view.getRecordData(),
@@ -84,15 +84,14 @@ Ext.define('Tasker.view.addNewTask.windowController', {
         }, taskJson = _this.mergeJsons(originalTask, previewTaskData);
 
 
-
         model.getStore('taskCards').loadData([taskJson]);
     },
 
     mergeJsons: function (originalJson, mergeJson) {
         let jsonNames = Object.getOwnPropertyNames(originalJson),
-        returnJson = {};
+            returnJson = {};
 
-        jsonNames.forEach(function(prop) {
+        jsonNames.forEach(function (prop) {
             if (Ext.isEmpty(mergeJson[prop])) {
                 returnJson[prop] = originalJson[prop];
             } else {
@@ -104,7 +103,7 @@ Ext.define('Tasker.view.addNewTask.windowController', {
         return returnJson;
     },
 
-    isValid: function() {
+    isValid: function () {
         let _this = this,
             view = _this.getView(),
             firstForm = view.lookupReference('firstForm'),
@@ -119,7 +118,7 @@ Ext.define('Tasker.view.addNewTask.windowController', {
         }
     },
 
-    showToast: function(s) {
+    showToast: function (s) {
         Ext.toast({
             html: s,
             closable: false,
@@ -128,7 +127,7 @@ Ext.define('Tasker.view.addNewTask.windowController', {
             maxWidth: 400
         });
     },
-    
+
     onAccept: function (btn, e) {
 
         let _this = this,
@@ -168,6 +167,7 @@ Ext.define('Tasker.view.addNewTask.windowController', {
                 isNew: isNewValue
             };
 
+        // To add (week, resolvedDay)
 
 
         if (_this.isValid()) {
@@ -179,11 +179,64 @@ Ext.define('Tasker.view.addNewTask.windowController', {
                     } else {
                         inProcessTaskPanelModel.getStore('taskCards').add(newTask);
                     }
+                //     Ext.Ajax.request({
+                //         url: Ext.getBaseUrl(),
+                //         method: 'POST',
+                //         contentType: "application/json",
+                //         jsonData: JSON.stringify({
+                //             "query": `mutation {
+                //     createTask(
+                //         task: {
+                //     name: "${newTask.title}"
+                //     description: "${newTask.description}"
+                //     rating: ${newTask.rating}
+                //     initialDate: "${newTask.initDate}"
+                //     endDate: "${newTask.endDate}"
+                //     week: 4
+                //     duration: ${newTask.duration}
+                //     category: "${newTask.category}"
+                //     priority: ${newTask.priority}
+                //     proyect: "${newTask.project}"
+                //     storyPoints: ${newTask.storyPoints}
+                //     color: "${newTask.color}"
+                //     newIs: ${newTask.isNew}
+                //     wasDeleted: false
+                //     resolvedDay: ""
+                // }
+                // ) {
+                //     status
+                // }
+                // }
+                //     `
+                //         }),
+                //         success: function (response) {
+                //             debugger;
+                //             // context.getEl().unmask();
+                //             // var data = JSON.parse(response.responseText);
+                //             // if (data.children[0].canDelete) {
+                //             //     context.fireEvent(event, customParams);
+                //             // } else {
+                //             //     Ext.Notify.msg(Ext.localization.integrityPanel.error.referentialIntegrity, {
+                //             //         layout: 'bottomright',
+                //             //         delay: 5000,
+                //             //         type: 'error'
+                //             //     });
+                //             // }
+                //         },
+                //         failure: function (response) {
+                //             debugger;
+                //             // var data = JSON.parse(response.responseText);
+                //             // Ext.Notify.msg(data.message, {
+                //             //     layout: 'bottomright',
+                //             //     delay: 5000,
+                //             //     type: 'error'
+                //             // });
+                //         }
+                //     });
+
                     break;
 
                 case 'edit':
-                    debugger;
-                    // taskJson = _this.mergeJsons(originalTask, previewTaskData);
                     let store,
                         data,
                         newData;
@@ -194,24 +247,19 @@ Ext.define('Tasker.view.addNewTask.windowController', {
                     }
                     data = store.getById(view.getRecordData().id).data
                     newData = _this.mergeJsons(data, newTask)
-                    store.getById(view.getRecordData().id).set('data', newData);
-                    break;
-
-                case 'delete':
+                    store.getById(view.getRecordData().id).set(newData);
                     break;
 
             }
-            
+
             view.close();
         } else {
             _this.showToast('Please Fill all the fields');
         }
 
 
-
-
     },
-    
+
     onCancel: function (btn, e) {
         let _this = this,
             view = _this.getView();
